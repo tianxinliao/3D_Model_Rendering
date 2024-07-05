@@ -65,12 +65,12 @@
 
             // 加载MTL和OBJ文件
             const mtlLoader = new THREE.MTLLoader();
-            mtlLoader.load('china.mtl', function (materials) {
+            mtlLoader.load('tigar.mtl', function (materials) {
                 materials.preload();
 
                 const objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
-                objLoader.load('china.obj', function (loadedObject) {
+                objLoader.load('tigar.obj', function (loadedObject) {
                     object = loadedObject;
 
                     // 调整模型大小和位置
